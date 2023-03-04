@@ -32,7 +32,7 @@ function Dashboard() {
 
 
   const getCpuUsage = () => {
-    fetch('http://127.0.0.1/')
+    fetch('http://monitorapi.pythonanywhere.com/')
       .then(res => res.json())
       .then(data => {
         setCpuUsage(data.cpu_usage);
